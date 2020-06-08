@@ -1,0 +1,36 @@
+{
+  "name": "webpack-config",
+  "version": "1.0.0",
+  "description": "Complete webpack config for all typical filetypes in web development",
+  "main": "index.js",
+  "private": true,
+  "author": "SharakPL <git@sharak.pl>",
+  "license": "ISC",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config=config/webpack.dev.js",
+    "build:dev": "cross-env NODE_ENV=development webpack --config=config/webpack.dev.js",
+    "serve": "php -S 127.0.0.1:8080 -t ./dist"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 edge version"
+    ]
+  },
+  "devDependencies": {
+    "stylelint": "^13.6.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "cross-env": "^7.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

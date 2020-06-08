@@ -1,5 +1,5 @@
-# Webpack universal config
+# Universal Webpack config
 
-Handled types:
+Handled file types:
 
 - js

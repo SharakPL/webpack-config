@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  color: #333;
+  font-family: sans-serif;
+}
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+h1 {
+  text-align: center;
+  color: #009ec5;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}

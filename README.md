@@ -1,5 +1,17 @@
 # Universal Webpack config
 
-Handled file types:
+## Handled file types
+
+Scripts:
 
 - js
+
+Styles:
+
+- css
+
+Images:
+
+- jpg, jpeg
+- png
+- gif

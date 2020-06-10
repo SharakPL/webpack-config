@@ -10,8 +10,7 @@ module.exports = {
   mode: isProd ? "production" : (isDev ? "development" : 'none'),
   output: {
     filename: "assets/[name]-bundle.js",
-    path: path.resolve(__dirname, '../dist'),
-    publicPath: '/'
+    path: path.resolve(__dirname, '../dist')
   },
   devServer: {
     contentBase: "dist"
@@ -26,6 +25,45 @@ module.exports = {
           },
           {
             loader: "css-loader"
+          }
+        ]
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].html"
+            }
+          },
+          {
+            loader: "extract-loader"
+          },
+          {
+            loader: "html-loader",
+            options: {
+              attributes: {
+                list: [
+                  {
+                    tag: 'img',
+                    attribute: 'src',
+                    type: 'src',
+                  },
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(gif|jpe?g|png)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "images/[name].[ext]"
+            }
           }
         ]
       }

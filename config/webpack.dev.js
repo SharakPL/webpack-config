@@ -10,13 +10,27 @@ module.exports = {
   mode: isProd ? "production" : (isDev ? "development" : 'none'),
   output: {
     filename: "assets/[name]-bundle.js",
-    path: path.resolve(__dirname, '../dist')
+    path: path.resolve(__dirname, '../dist'),
+    publicPath: '/'
   },
   devServer: {
-    contentBase: "dist"
+    contentBase: "dist",
+
   },
   module: {
     rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: ['@babel/preset-env']
+            }
+          }
+        ]
+      },
       {
         test: /\.css$/,
         use: [
@@ -62,7 +76,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              name: "images/[name].[ext]"
+              name: "assets/images/[name].[ext]"
             }
           }
         ]

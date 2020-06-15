@@ -14,8 +14,7 @@ module.exports = {
     publicPath: '/'
   },
   devServer: {
-    contentBase: "dist",
-
+    contentBase: "dist"
   },
   module: {
     rules: [
@@ -24,10 +23,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         use: [
           {
-            loader: "babel-loader",
-            options: {
-              presets: ['@babel/preset-env']
-            }
+            loader: "babel-loader"
           }
         ]
       },

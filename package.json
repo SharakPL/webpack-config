@@ -11,7 +11,7 @@
     "build:dev": "cross-env NODE_ENV=development webpack --config=config/webpack.dev.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --debug --config=config/webpack.dev.js",
     "start": "npm run dev",
-    "serve": "php -S localhost:8080 -t ./dist"
+    "serve": "php -S 127.0.0.1:8080 -t ./dist"
   },
   "browserslist": {
     "production": [

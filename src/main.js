@@ -1,5 +1,6 @@
-import './css/main.css';
-import './index.html';
+require('./css/main.css');
+require('./sass/main.scss');
+require('./index.html');
 
 const test = async (args) => {
   const promise = new Promise((resolve, reject) => {

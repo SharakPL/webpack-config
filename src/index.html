@@ -5,17 +5,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Webpack Config</title>
-  <link rel="stylesheet" href="assets/main-bundle.css">
+  <link rel="stylesheet" href="/assets/main-bundle.css">
 </head>
 
 <body>
   <div class="container">
-    <h1>Hello world</h1>
-    <img src="img/mountain-spring-5180660_640.jpg" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe vero ut culpa eligendi quos, incidunt reprehenderit consequuntur asperiores voluptas sapiente numquam ex, iure repudiandae a impedit voluptates nihil rem eveniet voluptatum repellat nam, aspernatur obcaecati iusto. Tempore officiis nam recusandae dolore quos aut minus non dolores reprehenderit nihil vero illo alias reiciendis, ut, rerum sequi nesciunt. Ipsum deleniti, cupiditate, quam numquam quasi rem velit, nobis eveniet corrupti blanditiis et. Vitae, libero consectetur voluptate quos hic id, ea, nisi possimus blanditiis voluptatibus delectus. Earum officiis unde nihil cupiditate sit nesciunt, cumque tempora quasi totam enim, hic ipsa repellendus, dolorum obcaecati quo.</p>
+    <div class="main-grid">
+      <header class="header">
+        <div class="header-wrapper centered-content">
+          <h1>Hello world</h1>
+        </div>
+      </header>
+      <div class="left-col col">
+        <div class="col-wrapper sticky-top">Left column</div>
+      </div>
+      <div class="center-col col">
+        <div class="col-wrapper">
+          <img src="img/mountain-spring-5180660_640.jpg" alt="">
+          <form action="#">
+            <input type="text" name="test" id="test" placeholder="Required input" required>
+          </form>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe vero ut culpa eligendi quos, incidunt reprehenderit consequuntur asperiores voluptas sapiente numquam ex, iure repudiandae a impedit voluptates nihil rem eveniet voluptatum repellat nam, aspernatur obcaecati iusto. Tempore officiis nam recusandae dolore quos aut minus non dolores reprehenderit nihil vero illo alias reiciendis, ut, rerum sequi nesciunt. Ipsum deleniti, cupiditate, quam numquam quasi rem velit, nobis eveniet corrupti blanditiis et. Vitae, libero consectetur voluptate quos hic id, ea, nisi possimus blanditiis voluptatibus delectus. Earum officiis unde nihil cupiditate sit nesciunt, cumque tempora quasi totam enim, hic ipsa repellendus, dolorum obcaecati quo.</p>
+          <div class="list">
+            <div class="list-item">Item 1</div>
+            <div class="list-item">Item 2</div>
+            <div class="list-item">Item 3</div>
+            <div class="list-item">Item 4</div>
+            <div class="list-item">Item 5</div>
+            <div class="list-item">Item 6</div>
+            <div class="list-item">Item 7</div>
+            <div class="list-item">Item 8</div>
+            <div class="list-item">Item 9</div>
+            <div class="list-item">Item 10</div>
+            <div class="list-item">Item 11</div>
+            <div class="list-item">Item 12</div>
+            <div class="list-item">Item 13</div>
+          </div>
+        </div>
+      </div>
+      <div class="right-col col">
+        <div class="col-wrapper sticky-top">Right column</div>
+      </div>
+      <footer class="footer">
+        <div class="footer-wrapper centered-content">
+          Footer
+        </div>
+      </footer>
+    </div>
   </div>
 
-  <script src="assets/main-bundle.js"></script>
+  <script src="/assets/main-bundle.js"></script>
 </body>
 
 </html>

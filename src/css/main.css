@@ -1,17 +1,7 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: #eee;
-  color: #333;
-  font-family: sans-serif;
-}
-.container {
-  padding: 0 1rem;
-  margin: 0 auto;
-  max-width: 1200px;
+::placeholder {
+  color: red;
 }
 h1 {
-  text-align: center;
   color: #009ec5;
 }
 p {
@@ -20,5 +10,5 @@ p {
 }
 img {
   display: block;
-  margin: 0 auto;
+  max-width: 100%;
 }
